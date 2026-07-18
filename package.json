@@ -1,0 +1,42 @@
+{
+  "name": "atelas",
+  "version": "1.0.0",
+  "description": "Atelas — The Goat for World (app desktop)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "publish": "electron-builder --publish always"
+  },
+  "author": "Atelas",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "electron-updater": "^6.1.7"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.atelas.app",
+    "productName": "Atelas",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "app/**/*"
+    ],
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "SEU_USUARIO_GITHUB",
+        "repo": "NOME_DO_REPOSITORIO"
+      }
+    ],
+    "win": { "target": "nsis" },
+    "mac": { "target": "dmg" },
+    "linux": { "target": "AppImage" }
+  }
+}

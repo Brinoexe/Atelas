@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mod de Som — Atelas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/modsom.css">
+</head>
+<body>
+
+<div class="page-wrap">
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav>
+    <div class="nav-left">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 32 32" fill="none">
+          <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" stroke="var(--gold)" stroke-width="1.6" fill="none"/>
+          <circle cx="16" cy="16" r="5" fill="var(--gold)"/>
+        </svg>
+        Atelas
+      </a>
+      <ul class="nav-links">
+        <li><a href="modspack.html">Modspack</a></li>
+        <li><a href="mod-som.html" class="active">Mod de Som</a></li>
+        <li><a href="mod-animacao.html">Mod de Animação</a></li>
+        <li><a href="mods-essenciais.html">Mods essenciais</a></li>
+        <li><a href="tutoriais.html">Tutoriais</a></li>
+        <li><a href="icons.html">Icons</a></li>
+        <li><a href="wallpapers.html">Wallpapers</a></li>
+        <li><a href="otimizacao.html">Otimização</a></li>
+        <li><a href="all-servers.html">All Servers</a></li>
+      </ul>
+    </div>
+    <div class="avatar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <circle cx="12" cy="8" r="3.5"/>
+        <path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/>
+      </svg>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="breadcrumb"><a href="index.html">Atelas</a> <span class="sep">/</span> Mod de Som</div>
+    <h1>Mod de Som</h1>
+    <p class="page-desc">Áudios customizados para deixar seu servidor com uma identidade sonora única. Clique em qualquer prévia pra ouvir antes de baixar.</p>
+
+    <svg class="wave-strip" id="waveStrip" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+      <path id="wavePath" d="" fill="none" stroke="var(--gold)" stroke-width="1.4"/>
+    </svg>
+  </div>
+
+  <div class="page-content">
+
+    <div class="volume-bar">
+      <button class="mute-btn" id="muteBtn" aria-label="Ativar ou desativar o som">
+        <svg id="volIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 9v6h4l5 5V4L8 9H4z"/>
+          <path id="volWave1" d="M16.5 8.5a5 5 0 0 1 0 7"/>
+          <path id="volWave2" d="M19 6a9 9 0 0 1 0 12"/>
+        </svg>
+      </button>
+      <input type="range" id="volumeSlider" min="0" max="100" value="55" aria-label="Volume das prévias">
+      <span class="volume-hint">volume da prévia</span>
+    </div>
+
+    <div class="card-grid" id="cardGrid">
+
+      <div class="card" data-sound="buzina">
+        <div class="card-top">
+          <div class="card-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M3 13l1.5-5A2 2 0 0 1 6.4 6.5h11.2A2 2 0 0 1 19.5 8l1.5 5" /><rect x="2.5" y="13" width="19" height="6" rx="1.5"/><circle cx="7" cy="19.5" r="1.6"/><circle cx="17" cy="19.5" r="1.6"/></svg>
+          </div>
+          <span class="card-tag">Veículos</span>
+        </div>
+        <h3>Buzinas Customizadas</h3>
+        <p>Coleção com mais de 40 buzinas diferentes, prontas para instalar em qualquer veículo do servidor.</p>
+        <div class="card-footer">
+          <button class="preview-btn" data-sound="buzina">
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-stop" viewBox="0 0 24 24" fill="currentColor" hidden><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+            <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="preview-label">Prévia</span>
+          </button>
+          <a class="card-btn" href="#" data-name="Buzinas Customizadas">
+            Baixar
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="card" data-sound="sirene">
+        <div class="card-top">
+          <div class="card-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M18 16v-5a6 6 0 0 0-12 0v5l-2 2h16z"/><path d="M9.5 20a2.5 2.5 0 0 0 5 0"/></svg>
+          </div>
+          <span class="card-tag">Emergência</span>
+        </div>
+        <h3>Sirenes Realistas</h3>
+        <p>Sirenes de polícia, bombeiros e ambulância gravadas com qualidade de estúdio.</p>
+        <div class="card-footer">
+          <button class="preview-btn" data-sound="sirene">
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-stop" viewBox="0 0 24 24" fill="currentColor" hidden><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+            <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="preview-label">Prévia</span>
+          </button>
+          <a class="card-btn" href="#" data-name="Sirenes Realistas">
+            Baixar
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="card" data-sound="ambiente">
+        <div class="card-top">
+          <div class="card-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <span class="card-tag">Ambiente</span>
+        </div>
+        <h3>Ambiente Urbano</h3>
+        <p>Sons de fundo para deixar a cidade viva: tráfego, multidão, natureza e clima.</p>
+        <div class="card-footer">
+          <button class="preview-btn" data-sound="ambiente">
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-stop" viewBox="0 0 24 24" fill="currentColor" hidden><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+            <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="preview-label">Prévia</span>
+          </button>
+          <a class="card-btn" href="#" data-name="Ambiente Urbano">
+            Baixar
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="back-home" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l6 6-6 6"/></svg>
+      Voltar para a home
+    </a>
+  </div>
+</div>
+
+<div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+<script src="assets/js/modsom.js" defer></script>
+</body>
+</html>

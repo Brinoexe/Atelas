@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modspack — Atelas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/modspack.css">
+</head>
+<body>
+
+<div class="page-wrap">
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav>
+    <div class="nav-left">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 32 32" fill="none">
+          <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" stroke="var(--gold)" stroke-width="1.6" fill="none"/>
+          <circle cx="16" cy="16" r="5" fill="var(--gold)"/>
+        </svg>
+        Atelas
+      </a>
+      <ul class="nav-links">
+        <li><a href="Modspack.html" class="active">Modspack</a></li>
+        <li><a href="Mod de Som.html">Mod de Som</a></li>
+        <li><a href="Mod de Animação.html">Mod de Animação</a></li>
+        <li><a href="Mods essenciais.html">Mods essenciais</a></li>
+        <li><a href="Tutoriais.html">Tutoriais</a></li>
+        <li><a href="Icons.html">Icons</a></li>
+        <li><a href="Wallpapers.html">Wallpapers</a></li>
+        <li><a href="Otimização.html">Otimização</a></li>
+        <li><a href="All Servers.html">All Servers</a></li>
+      </ul>
+    </div>
+    <div class="avatar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <circle cx="12" cy="8" r="3.5"/>
+        <path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/>
+      </svg>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="breadcrumb"><a href="index.html">Atelas</a> <span class="sep">/</span> Modspack</div>
+    <h1>Modspack</h1>
+    <p class="page-desc">Pacotes prontos, testados e otimizados para colocar seu servidor no ar sem dor de cabeça. Escolha, baixe e instale.</p>
+  </div>
+
+  <div class="page-content">
+
+    <div class="toolbar">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="text" id="modSearch" placeholder="Buscar packs por nome ou descrição...">
+        <button class="clear-search" id="clearSearch" aria-label="Limpar busca" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="chip-group" id="categoryChips">
+        <button class="chip active" data-category="all">Todos</button>
+        <button class="chip" data-category="performance">Performance</button>
+        <button class="chip" data-category="visual">Visual</button>
+        <button class="chip" data-category="comunidade">Comunidade</button>
+        <button class="chip" data-category="roleplay">Roleplay</button>
+      </div>
+      <div class="sort-wrap">
+        <select id="sortSelect" class="sort-select">
+          <option value="downloads">Mais baixados</option>
+          <option value="likes">Mais curtidos</option>
+          <option value="updated">Atualizados recentemente</option>
+        </select>
+      </div>
+    </div>
+
+    <p class="result-count" id="resultCount"><strong>8</strong> packs encontrados</p>
+
+    <div class="mod-list" id="modList">
+
+      <a class="mod-row" href="#" data-category="performance" data-downloads="128000" data-likes="3200" data-updated="2">
+        <div class="mod-thumb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+        </div>
+        <div class="mod-info">
+          <div class="mod-heading">
+            <h3>Pack Performance</h3>
+            <span class="mod-tag">Performance</span>
+          </div>
+          <span class="mod-author">por Atelas Team</span>
+          <p class="mod-desc">Recursos essenciais com foco em baixo consumo de CPU e FPS estável, ideal para servidores com poucos recursos de hardware.</p>
+          <div class="mod-stats">
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>128K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.3-9.5-8.5C1 8 2.5 4.5 6 4c2-.3 3.7.8 6 3 2.3-2.2 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 15.7 12 20 12 20z"/></svg>3.2K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>atualizado há 2 dias</span>
+          </div>
+        </div>
+        <div class="mod-action">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+        </div>
+      </a>
+
+      <a class="mod-row" href="#" data-category="comunidade" data-downloads="215000" data-likes="8900" data-updated="1">
+        <div class="mod-thumb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 13.5c2.8.3 5 2.5 5 6.5"/></svg>
+        </div>
+        <div class="mod-info">
+          <div class="mod-heading">
+            <h3>Pack Comunidade</h3>
+            <span class="mod-tag">Comunidade</span>
+          </div>
+          <span class="mod-author">por Atelas Team</span>
+          <p class="mod-desc">A escolha mais usada pelos nossos usuários: equilíbrio entre performance, visual e recursos de roleplay.</p>
+          <div class="mod-stats">
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>215K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.3-9.5-8.5C1 8 2.5 4.5 6 4c2-.3 3.7.8 6 3 2.3-2.2 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 15.7 12 20 12 20z"/></svg>8.9K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>atualizado há 1 dia</span>
+          </div>
+        </div>
+        <div class="mod-action">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+        </div>
+      </a>
+
+      <a class="mod-row" href="#" data-category="visual" data-downloads="96000" data-likes="4100" data-updated="5">
+        <div class="mod-thumb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div class="mod-info">
+          <div class="mod-heading">
+            <h3>Pack Imersão</h3>
+            <span class="mod-tag">Visual</span>
+          </div>
+          <span class="mod-author">por Atelas Team</span>
+          <p class="mod-desc">HUD customizado, iluminação realista e efeitos climáticos para elevar a experiência visual do seu servidor.</p>
+          <div class="mod-stats">
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>96K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.3-9.5-8.5C1 8 2.5 4.5 6 4c2-.3 3.7.8 6 3 2.3-2.2 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 15.7 12 20 12 20z"/></svg>4.1K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>atualizado há 5 dias</span>
+          </div>
+        </div>
+        <div class="mod-action">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+        </div>
+      </a>
+
+      <a class="mod-row" href="#" data-category="roleplay" data-downloads="41000" data-likes="1400" data-updated="3">
+        <div class="mod-thumb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M18 16v-5a6 6 0 0 0-12 0v5l-2 2h16z"/><path d="M9.5 20a2.5 2.5 0 0 0 5 0"/></svg>
+        </div>
+        <div class="mod-info">
+          <div class="mod-heading">
+            <h3>Pack Emergência</h3>
+            <span class="mod-tag">Roleplay</span>
+          </div>
+          <span class="mod-author">por Atelas Team</span>
+          <p class="mod-desc">Recursos completos para viaturas de polícia, bombeiros e ambulância, com despacho e alertas realistas.</p>
+          <div class="mod-stats">
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>41K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.3-9.5-8.5C1 8 2.5 4.5 6 4c2-.3 3.7.8 6 3 2.3-2.2 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 15.7 12 20 12 20z"/></svg>1.4K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>atualizado há 3 dias</span>
+          </div>
+        </div>
+        <div class="mod-action">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+        </div>
+      </a>
+
+      <a class="mod-row" href="#" data-category="roleplay" data-downloads="54000" data-likes="1800" data-updated="7">
+        <div class="mod-thumb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M3 9l4 3 5-6 5 6 4-3-2 10H5z"/></svg>
+        </div>
+        <div class="mod-info">
+          <div class="mod-heading">
+            <h3>Pack Economia RP</h3>
+            <span class="mod-tag">Roleplay</span>
+          </div>
+          <span class="mod-author">por Atelas Team</span>
+          <p class="mod-desc">Sistema de empregos, empresas e mercado dinâmico para servidores com foco em economia realista.</p>
+          <div class="mod-stats">
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>54K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.3-9.5-8.5C1 8 2.5 4.5 6 4c2-.3 3.7.8 6 3 2.3-2.2 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 15.7 12 20 12 20z"/></svg>1.8K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>atualizado há 1 semana</span>
+          </div>
+        </div>
+        <div class="mod-action">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+        </div>
+      </a>
+
+      <a class="mod-row" href="#" data-category="visual" data-downloads="33000" data-likes="2600" data-updated="14">
+        <div class="mod-thumb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M3 13l1.5-5A2 2 0 0 1 6.4 6.5h11.2A2 2 0 0 1 19.5 8l1.5 5" /><rect x="2.5" y="13" width="19" height="6" rx="1.5"/><circle cx="7" cy="19.5" r="1.6"/><circle cx="17" cy="19.5" r="1.6"/></svg>
+        </div>
+        <div class="mod-info">
+          <div class="mod-heading">
+            <h3>Pack Drift &amp; Racing</h3>
+            <span class="mod-tag">Visual</span>
+          </div>
+          <span class="mod-author">por Atelas Team</span>
+          <p class="mod-desc">Física de veículo ajustada para drift, rastro de fumaça e efeitos visuais de velocidade.</p>
+          <div class="mod-stats">
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>33K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.3-9.5-8.5C1 8 2.5 4.5 6 4c2-.3 3.7.8 6 3 2.3-2.2 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 15.7 12 20 12 20z"/></svg>2.6K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>atualizado há 2 semanas</span>
+          </div>
+        </div>
+        <div class="mod-action">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+        </div>
+      </a>
+
+      <a class="mod-row" href="#" data-category="performance" data-downloads="18000" data-likes="900" data-updated="21">
+        <div class="mod-thumb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>
+        </div>
+        <div class="mod-info">
+          <div class="mod-heading">
+            <h3>Pack Hardcore Survival</h3>
+            <span class="mod-tag">Performance</span>
+          </div>
+          <span class="mod-author">por Atelas Team</span>
+          <p class="mod-desc">Fome, sede e necessidades básicas com consumo otimizado de recursos para servidores de sobrevivência.</p>
+          <div class="mod-stats">
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>18K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.3-9.5-8.5C1 8 2.5 4.5 6 4c2-.3 3.7.8 6 3 2.3-2.2 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 15.7 12 20 12 20z"/></svg>900</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>atualizado há 3 semanas</span>
+          </div>
+        </div>
+        <div class="mod-action">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+        </div>
+      </a>
+
+      <a class="mod-row" href="#" data-category="visual" data-downloads="27000" data-likes="1500" data-updated="4">
+        <div class="mod-thumb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        </div>
+        <div class="mod-info">
+          <div class="mod-heading">
+            <h3>Pack UI Minimalista</h3>
+            <span class="mod-tag">Visual</span>
+          </div>
+          <span class="mod-author">por Atelas Team</span>
+          <p class="mod-desc">Interface limpa e discreta, sem poluição visual, para quem prefere foco total no roleplay.</p>
+          <div class="mod-stats">
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>27K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.3-9.5-8.5C1 8 2.5 4.5 6 4c2-.3 3.7.8 6 3 2.3-2.2 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 15.7 12 20 12 20z"/></svg>1.5K</span>
+            <span class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>atualizado há 4 dias</span>
+          </div>
+        </div>
+        <div class="mod-action">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+        </div>
+      </a>
+
+    </div>
+
+    <p class="empty-state" id="emptyState">Nenhum pack encontrado com esses filtros. Tente outra busca ou categoria.</p>
+
+    <a class="back-home" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l6 6-6 6"/></svg>
+      Voltar para a home
+    </a>
+  </div>
+</div>
+
+<div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+<script src="assets/js/modspack.js" defer></script>
+</body>
+</html>

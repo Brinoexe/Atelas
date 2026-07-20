@@ -32,11 +32,18 @@
       {
         "provider": "github",
         "owner": "SEU_USUARIO_GITHUB",
-        "repo": "NOME_DO_REPOSITORIO"
+        "repo": "NOME_DO_REPOSITORIO",
+          "draft": false
       }
     ],
-    "win": { "target": "nsis" },
-    "mac": { "target": "dmg" },
-    "linux": { "target": "AppImage" }
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
   }
 }
